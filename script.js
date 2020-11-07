@@ -9,7 +9,7 @@ const eraseNeighbors = (row, col) => {
         let neighbor = document.querySelector(`.cell[data-pos="${i}-${j}"]`),
           neighborBgColor = neighbor.style.backgroundColor.replace(/\s/g, '')
         
-        if (!neighborBgColor || !neighborBgColor === 'rgb(256,256,256)')
+        if (!neighborBgColor || neighborBgColor === 'rgb(256,256,256)')
           continue;
     
         neighbor.style.backgroundColor = ''
