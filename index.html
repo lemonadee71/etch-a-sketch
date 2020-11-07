@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="grid"></div>
+      <div class="settings">
+        <div class="text">
+          <h1>Etch-a-Sketch</h1>
+          <p>Implementation by Shin Andrei Riego</p>
+          <hr>
+          <p>Hold CTRL key to erase</p>
+        </div>    
+        <div class="options">
+          <input type="number" id="inp-size" placeholder="Change grid size: max 100" max="100">
+          <button id="size">Submit</button>
+          <button id="clear">Clear grid</button>
+          <!--
+          <input type="number" id="inp-eraser" placeholder="Change eraser size: max 5" max="5">
+          <button id="eraser">Submit</button>
+          <button id="reset">Reset</button>
+          -->
+        </div>
+      </div>        
+    </div>    
+    <script src="script.js"></script>
+  </body>
+</html>
