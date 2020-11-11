@@ -61,9 +61,9 @@ const clearGrid = () => {
 
 // Buttons
 let clearBtn = document.getElementById('clear')
-clearBtn.addEventListener('click', clearGrid)
+let sizeBtn = document.getElementById('size') 
 
-let sizeBtn = document.getElementById('size')  
+clearBtn.addEventListener('click', clearGrid) 
 sizeBtn.addEventListener('click', () => {
   let sizeInp = document.getElementById('inp-size'),
     newSize = parseInt(sizeInp.value)
@@ -77,22 +77,5 @@ sizeBtn.addEventListener('click', () => {
     clearGrid()
   }  
 })
-
-/*
-let eraserSizeBtn = document.getElementById('eraser')
-eraserSizeBtn.addEventListener('click', () => {
-  let sizeInp = document.getElementById('inp-eraser'),
-    newSize = parseInt(sizeInp.value)
-  
-  if (newSize < 1) {
-    alert('Minimum size of eraser is 1')
-  } else if (newSize > 10) {
-    alert('Maximum size of eraser is 10')
-  } else {
-    eraserX = parseInt(sizeInp.value)
-    eraserY = parseInt(sizeInp.value)
-  }  
-})
-*/
 
 drawGrid();
